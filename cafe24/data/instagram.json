@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "media_url": "https://이미지주소/1.jpg",
+      "permalink": "https://www.instagram.com/p/게시물코드/",
+      "caption": "게시물 설명 (선택)"
+    }
+  ]
+}
