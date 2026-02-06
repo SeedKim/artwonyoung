@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VISITED | aart.wonyoung</title>
+  <meta name="description" content="aart.wonyoung 공간 소개 - Venue와 Studio를 둘러보세요.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">aart.wonyoung</a>
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="guide.html">GUIDE</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="notice.html">NOTI</a>
+        <a href="venue.html" class="active">VISITED</a>
+      </div>
+      <button type="button" class="nav-toggle" aria-label="메뉴" aria-expanded="false">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-panel" id="navPanel">
+      <a href="index.html">HOME</a>
+      <a href="guide.html">GUIDE</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="notice.html">NOTI</a>
+      <a href="venue.html" class="active">VISITED</a>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container max-w-7xl">
+      <div class="page-title">
+        <h1>VISITED</h1>
+        <p>Venue와 Studio를 둘러보세요</p>
+      </div>
+      <div class="visited-grid">
+        <section class="card visited-card">
+          <h2 class="section-title">visited STUDIO</h2>
+          <div id="studioList" class="visited-list"></div>
+        </section>
+        <section class="card visited-card">
+          <h2 class="section-title">visited VENUE</h2>
+          <div id="venueList" class="visited-list"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><h3>aart.wonyoung</h3><p>웨딩과 아트가 만나는 특별한 공간</p></div>
+        <div><h3>Quick Links</h3><ul><li><a href="guide.html">GUIDE</a></li><li><a href="venue.html">VISITED</a></li><li><a href="notice.html">NOTI</a></li><li><a href="contact.html">CONTACT</a></li></ul></div>
+        <div><h3>Contact</h3><p>Email: info@aart.wonyoung</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span id="year"></span> aart.wonyoung. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/venue.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
